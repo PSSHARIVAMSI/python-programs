@@ -1,0 +1,293 @@
+
+#1]EVEN AND ODD IN FUNCTIONS
+"""
+def even_odd(n):
+    #  n==4
+    if(n%2!=0): 
+        print("odd")
+        #return "Odd"
+    else:
+        print("Even")  # Even
+        #return "Even"
+
+n=int(input("HOw many times should execute"))#4
+for i in range(0,n): #0    1       2    3
+    p=int(input())  #1      10    
+    even_odd(p)     #odd,  even  
+
+"""
+
+#2]Python program to add n numbers
+"""
+#4
+#1 2 3 4
+#10
+
+T=int(input()) #4
+s=0
+for i in range(0,T):
+     n=int(input())  # 1 2 3 4
+     s=s+n
+print(s)
+
+
+"""
+
+
+
+#3]Maximum of n numbers in Python
+"""
+#i/p---->6
+#i/p---->1 2 3 4 5 6
+#o/p--->6
+def max(t):
+    s=0
+    for i in range(0,t):
+        a=int(input())
+        if(a>s):
+            s=a
+    return s    
+    
+t=int(input())
+print(max(t))
+
+
+"""
+
+#4]Python Program for factorial of a number
+
+"""
+n=int(input())
+v=1
+for i in range(1,n+1):
+    v=v*i
+print(v)    
+"""
+#or
+"""
+#using terenary operator
+def fact(n):
+    return 1 if(n==1 or n==0) else n*fact(n-1)
+
+n=int(input())
+print(fact(n))
+"""
+
+#5]Python Program for simple interest
+
+"""
+def sim_int():
+    return (int)((p*t*r)/100)
+    
+
+p=int(input())
+t=int(input())
+r=int(input())
+print(sim_int())
+
+"""
+
+#6]Python Program for compound interest
+"""
+def com_int(p,t,r):
+    return (((((r/100)+1)**t)*p)-p)
+    
+
+p=float(input())
+t=float(input())
+r=float(input())
+print(com_int(p,t,r))
+
+"""
+
+#6]Python Program to check Armstrong Number
+"""
+def digt_count(temp):
+    c=0
+    while temp:
+        m=n%10
+        temp=temp//10
+        c=c+1
+    return c    
+n=int(input())
+temp=n
+s=0
+while n:
+    m=n%10
+    n=n//10
+    s+=(m**digt_count(temp))
+if(s==temp):
+    print("yes")
+else:
+    print("no")
+"""
+
+#7]Python Program for Program to find area of a circle and to round of for the required decimal value
+"""
+def area_circle(r):
+    area=math.pi*r*r
+    return area
+import math
+r=float(input("Enter the radius of the circle"))
+v=int(input())
+print(round(area_circle(r),v))
+"""
+#8]Python Program for Sum of squares of first n natural numbers
+"""
+n=int(input())
+print((n*((2*n)+1)*(n+1))/6)
+
+"""
+
+#9]Python Program for cube sum of first n natural numbers
+
+"""
+nn=int(input())    # 3
+s=0                #s=0 
+for i in range(1,nn+1):#1,2,3,4
+    s+=(i**3)# s=36
+print(s)    
+
+"""
+#or
+"""
+n=int(input())
+s=(n*(n+1))//2
+print(s*s)
+"""
+#or
+"""
+n=int(input())# 4
+x = 0
+if n % 2 == 0 :  #4%2==0 true
+    x = (n/2) * (n+1)   #x=  2*3
+else:
+    x = ((n + 1) / 2) * n            
+print(int(x * x))
+
+"""
+#10]Program to print ASCII Value of a character
+"""
+n=str(input())
+print(ord(n))
+"""
+
+#11]Python Program for n-th Fibonacci number
+"""
+num=int(input())
+a=0
+b=1
+if num==1:
+    print(a)
+elif num==2:
+    print(a,b)
+else:
+    print(a,b,end=" ")
+    for i in range (3,num+1): 
+        c=a+b   
+        a=b
+        b=c
+        print(c,end=" ")  
+"""
+
+#12]Python Program for printing Fibonacci series upto the n value?
+"""
+num=int(input())
+a=0
+b=1
+i=1
+c=1
+while c<num:
+    if i==1:
+        print(a,end=" ")
+    else:
+        print(b,end=" ")
+        c=a+b
+        a=b
+        b=c
+    i+=1 
+
+"""
+
+#13]Python Program for How to check if a given number is Fibonacci number?
+"""
+num=int(input())
+a=0
+b=1
+i=1
+c=1
+while c<=num:
+  if i==1:
+    print("yes")
+    break
+  else:
+    #print(b,end=" ")
+    c=a+b
+    a=b
+    b=c
+    if(b==num):
+      print("yes")
+    else:
+      print("No")
+      break
+    
+  i+=1 
+
+"""
+#14]Python Program for n\’th multiple of a number in Fibonacci Series
+
+
+#15]Python program to print all Prime numbers in an Interval
+"""
+start = int(input())
+end = int(input())
+  
+for i in range(start, end+1):
+  if i>1:
+    for j in range(2,i):
+        #print(i,j)
+        if(i % j==0):
+            break
+    else:
+        print(i)  
+"""
+
+#16]Python program to check whether a number is Prime or not
+#SEIVES algorithm
+"""
+n=1000000
+seive=[1 for i in range(n+1)]   #s=[0 0 1 1 0 1]
+i=2
+while (i*i<=n):      #9<=5
+    if seive[i]==1:  #s[2]==1    
+        for j in range(i*i,n+1,i): #4,6,2    4 
+            seive[j]=0 #s[4]==0
+    i=i+1
+
+seive[0]=0
+seive[1]=0
+
+n=int(input()) #5
+
+if seive[n]==1:   #s[5]==1
+    print("Prime")
+else:
+    print("Not a prime")
+
+"""
+
+#17]Python program to find the COLLATZ sequence
+#input-->7
+#7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 
+"""
+def hi(n):
+    print(n,end=" ")
+    if(n==1):
+        return 0 
+    elif(n%2==0):
+        return(hi(n//2))
+    else:
+        return(hi((3*n)+1))
+n=int(input())
+hi(n)
+"""
