@@ -1,0 +1,134 @@
+#17]Solving Quadratic Eqn
+
+# Solve the quadratic equation ax**2 + bx + c = 0
+
+# import complex math module
+"""
+import cmath
+
+a = 1
+b = 3
+c = 5
+
+# calculate the discriminant
+d = (b**2) - (4*a*c)
+
+# find two solutions
+sol1 = (-b-cmath.sqrt(d))/(2*a)
+sol2 = (-b+cmath.sqrt(d))/(2*a)
+
+print('The solution are {0} and {1}'.format(sol1,sol2))
+"""
+#or
+"""
+def quad_solve(a,b,c):
+    z=(b**2)-(4*a*c)
+    ans1=((-b+z**(1/2))/(2*a))
+    ans2=((-b-z**(1/2))/(2*a))
+    return ans1,ans2
+
+a=float(input("Enter x**2 coefficient"))
+b=float(input("Enter x coefficient"))
+c=float(input("Enter the constant"))
+print(quad_solve(a,b,c))
+"""
+            
+#https://www.programiz.com/python-programming/examples
+
+#18]Python Program to Create a Countdown Timer
+"""
+import time
+
+def countdown(time_sec):
+    while time_sec:
+        mins, secs = divmod(time_sec, 60)
+        timeformat = '{:02d}:{:02d}'.format(mins, secs)
+        print(timeformat, end='\n')
+        time.sleep(1)
+        time_sec -= 1
+
+    print("Times UP")
+n=int(input())
+countdown(n)
+"""
+#19]Python Program to Convert Celsius To Fahrenheit
+"""
+def c_f(n):
+    return n*(9/5)+32
+
+n=float(input())
+print(c_f(n))
+"""
+
+#20]swapping with the use of temporary variable
+"""
+a=int(input())#a=5
+b=int(input())#b=6
+
+temp=a #temp=5
+a=b    #a=6
+b=temp #b=5
+print(a,b)
+
+"""
+#21]swapping without the use of temporary variable
+"""
+
+a=int(input())#a=5
+b=int(input())#b=6
+print("BEFORE SWAP:","a-->",a,"b-->",b)
+b,a=a,b
+print("AFTER  SWAP:","a-->",a,"b-->",b)
+
+"""
+
+#22]Python Program to Generate a Random Number
+"""
+import random
+
+print(random.randint(1,99))
+"""
+
+#23]Python Program to Convert Kilometers to Miles
+"""
+def km2m(km):
+    m=km*conv_factor
+    return ('%0.2f'%m)
+    #return round(m,2)
+    
+km=float(input())
+conv_factor=0.621371
+print(km2m(km))
+"""
+"""
+n,m=int(input())#186
+l=[]
+while n>=1:
+    r=n%10   #r=6
+    n=n//10  #n=18
+  
+    l.append(r)
+#print(l)
+for i in l:    
+    if(l[i]>l[i-1]):
+        print("yes")
+    else:
+        pass
+
+"""
+#24]factors of 550 are [1, 2, 5, 10, 11, 22, 25, 50, 55, 110, 275, 550] in that
+#11 is in 5th position
+#i/p--->550 11
+#o/p--->5
+"""
+n,m=map(int,input().split())
+l=[]
+for i in range(1,n+1):
+    if n%i==0:
+        l.append(i)        
+#print(l)
+for i in range(0,len(l)):
+    if(l[i]==m):
+        print(i+1)
+    
+"""
