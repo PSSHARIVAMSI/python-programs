@@ -100,7 +100,7 @@ print(com_int(p,t,r))
 
 """
 
-#6]Python Program to check Armstrong Number
+#7]Python Program to check Armstrong Number
 """
 def digt_count(temp):
     c=0
@@ -122,7 +122,7 @@ else:
     print("no")
 """
 
-#7]Python Program for Program to find area of a circle and to round of for the required decimal value
+#8]Python Program for Program to find area of a circle and to round of for the required decimal value
 """
 def area_circle(r):
     area=math.pi*r*r
@@ -132,14 +132,14 @@ r=float(input("Enter the radius of the circle"))
 v=int(input())
 print(round(area_circle(r),v))
 """
-#8]Python Program for Sum of squares of first n natural numbers
+#9]Python Program for Sum of squares of first n natural numbers
 """
 n=int(input())
 print((n*((2*n)+1)*(n+1))/6)
 
 """
 
-#9]Python Program for cube sum of first n natural numbers
+#10]Python Program for cube sum of first n natural numbers
 
 """
 nn=int(input())    # 3
@@ -166,7 +166,7 @@ else:
 print(int(x * x))
 
 """
-#10]Program to print ASCII Value of a character
+#11]Program to print ASCII Value of a character
 """
 n=str(input())
 print(ord(n))
@@ -234,10 +234,8 @@ while c<=num:
   i+=1 
 
 """
-#14]Python Program for n\’th multiple of a number in Fibonacci Series
 
-
-#15]Python program to print all Prime numbers in an Interval
+#14]Python program to print all Prime numbers in an Interval
 """
 start = int(input())
 end = int(input())
@@ -252,7 +250,7 @@ for i in range(start, end+1):
         print(i)  
 """
 
-#16]Python program to check whether a number is Prime or not
+#15]Python program to check whether a number is Prime or not
 #SEIVES algorithm
 """
 n=1000000
@@ -276,7 +274,7 @@ else:
 
 """
 
-#17]Python program to find the COLLATZ sequence
+#16]Python program to find the COLLATZ sequence
 #input-->7
 #7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 
 """
