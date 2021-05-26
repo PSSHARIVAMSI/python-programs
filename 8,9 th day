@@ -33,7 +33,7 @@ c=float(input("Enter the constant"))
 print(quad_solve(a,b,c))
 """
             
-#https://www.programiz.com/python-programming/examples
+
 
 #18]Python Program to Create a Countdown Timer
 """
