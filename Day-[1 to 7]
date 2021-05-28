@@ -274,18 +274,4 @@ else:
 
 """
 
-#16]Python program to find the COLLATZ sequence
-#input-->7
-#7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 
-"""
-def hi(n):
-    print(n,end=" ")
-    if(n==1):
-        return 0 
-    elif(n%2==0):
-        return(hi(n//2))
-    else:
-        return(hi((3*n)+1))
-n=int(input())
-hi(n)
-"""
+
