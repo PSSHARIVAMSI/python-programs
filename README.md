@@ -65,6 +65,10 @@
 
 #31]Program make a simple calculator
 
+#31]python program to convert decimal to any base
+
+#32]python program to convert binary to any base
+
 
 
 
