@@ -65,9 +65,11 @@
 
 #31]Program make a simple calculator
 
-#31]python program to convert decimal to any base
+#32]python program to convert decimal to any base
 
-#32]python program to convert binary to any base
+#33]python program to convert binary to any base
+
+#34]An integer is a palindrome when it reads the same backward as forward.
 
 
 
