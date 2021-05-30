@@ -71,7 +71,11 @@
 
 #34]An integer is a palindrome when it reads the same backward as forward.
 
+#35]Python Program to Display Calendar
 
+#36]Python Program to Convert Decimal to Binary Using Recursion
+
+#37]Python Program to Print a Matrix
 
 
 
