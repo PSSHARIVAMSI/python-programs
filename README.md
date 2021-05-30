@@ -77,6 +77,10 @@
 
 #37]Python Program to Print a Matrix
 
+#38]Write A Program to check whether a given number is Amicable Number or not and display Amicable Number or Not Amicable Number
+
+#39]A number is said to be the Disarium number when the sum of its digit raised to the power of their respective positions becomes equal to the number itself.
+
 
 
 
