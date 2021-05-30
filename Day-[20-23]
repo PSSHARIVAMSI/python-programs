@@ -28,3 +28,40 @@ m=int(input("order of m"))
 n=int(input("order of n"))
 add_mat(m,n)
 """
+#38]#Write A Program to check whether a given number is Amicable Number or not and display Amicable Number or Not Amicable Number
+"""
+def amigo(a):
+    s=0
+    i=1
+    while i<a:
+        if a%i==0:
+            s=s+i
+        i+=1
+    return s
+a=int(input())
+b=int(input())
+c=amigo(a)
+d=amigo(b)
+       
+if(a==d) and (b==c):
+    print("Amicable Numbers")
+else:
+    print("Not Amicable Numbers")
+"""
+
+#39]A number is said to be the Disarium number when the sum of its digit raised to the power of their respective positions becomes equal to the number itself.
+"""
+n=int(input())
+temp=n
+c=len(str(n))
+sum=0
+while n>0:
+    r=n%10
+    n=n//10
+    sum+=(r**c)
+    c-=1
+if(temp==sum):
+    print(temp,"Disarium number")
+else:
+    print(temp,"not a Disarium number")
+"""
