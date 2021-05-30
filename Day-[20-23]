@@ -1,0 +1,30 @@
+#35]Python Program to Display Calendar
+"""
+import calendar
+year=int(input())
+month=int(input())
+print(calendar.month(year,month))
+"""
+#36]Python Program to Convert Decimal to Binary Using Recursion
+"""
+def dec_bin(n):#5
+    if(n>1):#5>1
+        dec_bin(n//2)
+    print(n%2,end="")    
+ 
+n=int(input())#5
+dec_bin(n)
+"""
+#37]Python Program to Print a Matrix
+"""
+def add_mat(m,n):
+    for i in range(0,m):
+        for j in range(0,n):
+            a=int(input("Enter elements"))
+            print(a,end="")
+        print(end="\n")
+        
+m=int(input("order of m"))
+n=int(input("order of n"))
+add_mat(m,n)
+"""
