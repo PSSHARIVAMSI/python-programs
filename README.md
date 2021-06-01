@@ -81,7 +81,13 @@
 
 #39]A number is said to be the Disarium number when the sum of its digit raised to the power of their respective positions becomes equal to the number itself.
 
+#40]Python program to find the area of a triangle
 
+#41]#Python Program to Generate a Random Number
+    #1]Generating a Random Number
+    #2]Generating a Number within a Given Range
+    #3]Using for loop
+    #4]Using random.sample()
 
 
 
