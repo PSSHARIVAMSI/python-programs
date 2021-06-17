@@ -88,7 +88,26 @@
     #2]Generating a Number within a Given Range
     #3]Using for loop
     #4]Using random.sample()
+    
+#42]Python Program to Check Whether a String is Palindrome or Not .
 
+#43]Python Program to Remove Punctuations From a String
+
+#44]Set operations (intersection,difference and symmetric diff)
+
+#45]Python Program to create Pyramid Patterns
+
+#46]Python Program to Add Two Matrices
+
+#47]Python Program to sort alphabetically the words form a string provided by the user
+
+#48]Python Program to Check If a List is Empty
+     #1]Using Boolean operation
+     #2]Using len()
+     #3]Comparing with []
+
+
+    
 
 
 
