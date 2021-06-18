@@ -105,6 +105,13 @@
      #1]Using Boolean operation
      #2]Using len()
      #3]Comparing with []
+     
+#49]Python Program to Get a Substring of a String
+
+#50]Python Program to Parse a String to a Float or Int
+    #i]Parse string into integer
+    #ii]Parse string into float
+    #iii]A string float numeral into integer
 
 
     
