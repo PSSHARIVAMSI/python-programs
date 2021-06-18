@@ -259,3 +259,51 @@ if l==[]:
     print("empty")
 """
 
+#49]Python Program to Get a Substring of a String
+"""
+my_string = "I love python."
+
+# prints "love"
+print(my_string[2:6])
+
+# prints "love python."
+print(my_string[2:])
+
+# prints "I love python"
+print(my_string[:-1]
+"""
+
+#50]Python Program to Parse a String to a Float or Int
+    #i]Parse string into integer
+"""
+balance_str = "1500"
+balance_int = int(balance_str)
+
+# print the type
+print(type(balance_int))
+
+# print the value
+print(balance_int)
+"""
+   #ii]Parse string into float
+"""
+balance_str = "1500.4"
+balance_float = float(balance_str)
+
+# print the type
+print(type(balance_float))
+
+# print the value
+print(balance_float)
+"""
+  #iii]A string float numeral into integer
+"""
+balance_str = "1500.34"
+balance_int = int(float(balance_str))
+
+# print the type
+print(type(balance_int))
+
+# print the value
+print(balance_int)
+"""
