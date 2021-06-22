@@ -113,7 +113,22 @@
     #ii]Parse string into float
     #iii]A string float numeral into integer
 
+#51]Python Program to Get the Last Element of the List
 
+#52]Python Program to Concatenate Two Lists
+
+#53]Python Program to Randomly Select an Element From the List
+    #1: Using random module
+    #2: Using secrets module
+
+#54]Python Program to Check If a String Is a Number (Float)
+
+#55]Python Program to Count the Occurrence of an Item in a List
+
+#56]Python Program to Create a Long Multiline String
+   #1: Using triple quotes
+   #2: Using parentheses and a single/double quotes
+   #3: Using \
     
 
 
