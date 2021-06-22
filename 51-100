@@ -1,0 +1,96 @@
+#51]Python Program to Get the Last Element of the List
+"""
+n=int(input())
+l=[]
+for i in range(0,n):
+    a=int(input())
+    l.append(a)
+
+#print("Last element: ",l[n-1])
+print("Last Element:",l[-1])
+
+"""
+
+#52]Python Program to Concatenate Two Lists
+"""
+n=int(input())
+z1=[int(input("z1 elements")) for i in range(0,n)]
+z2=[int(input("z2elements")) for j in range(0,n)]
+print(z1,z2)
+#print(z1+z2)
+#print(*z1,*z2)
+z2.extend(z1)
+print(z2)
+"""
+
+#53]Python Program to Randomly Select an Element From the List
+
+  #1: Using random module
+""""
+import random
+l=[1,5,3,5,2,8]
+print(random.choice(l))
+"""
+  #2: Using secrets module
+"""
+import secrets
+my_list=[1,'s','c',2,0,9]
+print(secrets.choice(my_list))
+"""
+
+#54]Python Program to Check If a String Is a Number (Float)
+"""
+def isstr(n):
+    try:
+        float(n)
+        return True
+    except ValueError:
+        return False
+print(isstr('sc209'))
+print(isstr('7'))
+"""
+
+#55]Python Program to Count the Occurrence of an Item in a List
+"""
+l=list(map(int,input().split()))#[1,2,3,1]
+n=int(input())#1
+count=0#c=0
+for i in range(0,len(l)): #0 1 2 3 
+    if l[i]==n: #l[3]==1
+        count+=1 # c=2
+
+print(count)
+"""
+#or
+"""
+l=list(map(int,input().split()))
+n=int(input())
+print(l.count(n))
+"""
+
+#56]Python Program to Create a Long Multiline String
+   #1: Using triple quotes
+"""
+string='''hai everyone
+how are you
+everthing is fine..'''
+
+print(string)
+"""
+
+   #2: Using parentheses and a single/double quotes
+
+string=("hai everyone \n"
+"how are you \ns"
+"everthing is fine..")
+
+print(string)
+
+   # 3: Using \
+"""
+string="hai everyone \n" \
+"how are you \n" \
+"everthing is fine.."
+
+print(string)
+"""
