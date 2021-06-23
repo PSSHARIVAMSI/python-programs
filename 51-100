@@ -94,3 +94,20 @@ string="hai everyone \n" \
 
 print(string)
 """
+
+#57]Python Program to Check If Two Strings are Anagram
+"""
+str1=input()
+str2=input()
+str1=str1.lower()
+str2=str2.lower()
+if len(str1)==len(str2):
+    str11=sorted(str1)
+    str22=sorted(str2)
+    if(str11==str22):
+        print("Anagram")
+    else:
+        print("Not an anagram")
+else:
+    print("Not an anagram")
+"""
