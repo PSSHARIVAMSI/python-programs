@@ -111,3 +111,44 @@ if len(str1)==len(str2):
 else:
     print("Not an anagram")
 """
+#58]Python Program to find largest element in an array
+"""
+def large_ele(arr):
+    temp = arr[0]
+    for i in range(1,len(arr)):
+        if(temp<arr[i]):
+            temp=arr[i]
+            
+    return temp
+       
+arr=list(map(int,input().split()))
+l=large_ele(arr)
+print("LARGE:",l)
+"""
+
+
+#59]Python Program to find smallest element in an arraydef small_num(arr):
+"""
+def small_num(arr):
+    temp=arr[0]
+    for i in range(1,len(arr)):
+        if(temp>arr[i]):
+            temp=arr[i]
+    return temp    
+        
+ 
+arr=list(map(int,input().split()))
+s=small_num(arr) 
+print("Small:",s)
+
+"""
+#60]Python Program for Find reminder of array multiplication divided by n
+"""
+l=list(map(int,input().split()))
+d=int(input())
+s=1
+for i in range(1,len(l)):
+    s=s*l[i]
+    #print(s)
+print(s%d)
+"""
