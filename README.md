@@ -132,8 +132,11 @@
 
 #57]Python Program to Check If Two Strings are Anagram.
     
+#58]Python Program to find largest element in an array
 
+#59]Python Program to find smallest element in an array
 
+#60]Python Program for Find reminder of array multiplication divided by n
 
     
 
