@@ -152,3 +152,25 @@ for i in range(1,len(l)):
     #print(s)
 print(s%d)
 """
+
+#61]Python Program for array rotation
+"""
+def rotate(ar,d,n):
+    for i in range(0,d):#
+        s=ar.pop(0)
+        ar.append(s)
+        
+    return ar
+
+    
+n=int(input("Enter array size"))
+ar=[]
+d=int(input("How many elemnets to rotate"))
+for i in range(0,n):
+    ar.append(int(input("Enter elements")))
+    
+s=rotate(ar,d,n)
+for i in range(0,len(s)):
+    print(s[i],end=' ')
+
+"""
