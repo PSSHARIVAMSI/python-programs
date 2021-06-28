@@ -174,3 +174,40 @@ for i in range(0,len(s)):
     print(s[i],end=' ')
 
 """
+
+
+#62]Python program to interchange first and last elements in a list
+"""
+
+l=list(map(int,input().split()))#1 2 3 4 
+y=len(l)
+fi=l[0]
+l.pop(0)
+
+la=l[len(l)-1]#
+l.pop(y-2)
+
+l.append(fi)
+l.insert(0,la)
+print(l)
+
+"""
+#or
+"""
+l=list(map(int,input().split()))
+a=len(l)
+l[0],l[a-1]=l[a-1],l[0]
+print(l)
+"""
+
+
+#63]Python program to swap two elements in a list
+"""
+
+l=list(map(int,input().split()))#4 2 3 1 5
+pos1=int(input())-1#1
+pos2=int(input())-1#4
+l[pos1],l[pos2] = l[pos2],l[pos1]
+print(l)
+    
+"""
