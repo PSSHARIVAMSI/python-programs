@@ -144,6 +144,10 @@
 
 #63]Python program to swap two elements in a list.
 
+#64]Length of the list using len_hint().
+
+#65]Check if element exists in list in Python.
+
 
 
 
