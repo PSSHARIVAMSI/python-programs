@@ -211,3 +211,59 @@ l[pos1],l[pos2] = l[pos2],l[pos1]
 print(l)
     
 """
+
+#64]Length of the list using len_hint()
+"""
+from operator import length_hint
+
+l=list(map(int,input().split()))
+
+#print (l)
+
+length= length_hint(l)
+
+print("length of the list:",length)
+
+"""
+#65]Check if element exists in list in Python
+"""
+def native_check(n,ee):
+    for i in n:
+        if(i==ee):
+            print("vunnara nenu list lo")
+            break
+    else:
+        print("Absent")
+            
+def set_check(n,ee):
+    s=set(n)
+    #print(s)
+    for i in s:
+        if(i==ee):
+            print("vunnara babu nenu list lo")
+            break
+    else:
+        print("not present")
+     
+def count_check(n,ee):
+    l=n.count(ee)
+    if (l>0):
+        print("Present")
+    else:
+        print("lenu")
+
+
+n=list(map(int,input().split()))
+print("Select a method.\n 1:Native method \n 2:set method \n 3:Count method")
+sel=int(input("Select one of the method above:"))
+ee=int(input("Which elementdo you want to check:"))
+if(sel==1):
+    native_check(n,ee)
+elif(sel==2):
+    set_check(n,ee)
+elif(sel==3):
+    count_check(n,ee)
+else:
+    print("Enter method number corectly")
+
+"""
